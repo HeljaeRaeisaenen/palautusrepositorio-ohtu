@@ -1,0 +1,5 @@
+Kaksi helppoa ja nopeaa retrospektiivitekniikkaa ovat SSCMLW ja Glad, Sad, Mad. Näistä ensimmäinen on vain n. 10 min pitkä. Siinä kartoitetaan sprintin tmv. toimintatapoja, asenteita ymv. sprinttailijoiden edistymiseen ja yhteistyöhön liittyviä asioita, ideana jakaa niitä kategorioihin ‘aloita’, ‘lopeta’, ‘jatka’, ‘enemmän’, ‘vähemmän’. Tilaa on antaa myös positiivista palautetta. Asioita mietitään koko tiimin näkökulmasta, mutta niihin ei ehkä pureuduta syvällisemmin.
+
+GSM voi olla pitempikestoisempi ja siinä tiimiläiset miettivät ensin itsekseen, mikä meni hyvin tai huonosti sprintin aikana. Asiat esitellään lopulle tiimille, joka ei saa tyrmätä toistensa kokemuksia. Kokemusten pohjalta suunnitellaan toimintaa seuraavaa sprinttiä varten: mitä voisi tehdä toisin, ja mitä voisi jatkaa? Pohdinta pohjautuu tiimiläisten tunteisiin, mikä voi auttaa tuomaan esille tiimityön kannalta keskeisiä ongelmia/toiveita.
+
+GSM on perusteellisempi ja avoimempi, mutta jopa tunnin retrospektiivit eivät aina onistu.

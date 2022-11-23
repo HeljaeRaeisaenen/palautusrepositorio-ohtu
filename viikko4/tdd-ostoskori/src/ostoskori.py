@@ -16,13 +16,13 @@ class Ostoskori:
         return määrä
 
     def hinta(self):
+        # kertoo korissa olevien ostosten yhteenlasketun hinnan
         hinta = 0
 
         for nimi in self.ostokset_kori:
             hinta += self.ostokset_kori[nimi].hinta()
 
         return hinta
-        # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):
         # lisää tuotteen
@@ -44,10 +44,9 @@ class Ostoskori:
             self.ostokset_kori.pop(nimi)
 
     def tyhjenna(self):
-        self.ostokset_kori = {}
         # tyhjentää ostoskorin
+        self.ostokset_kori = {}
 
     def ostokset(self):
-        return list(self.ostokset_kori.values())
         # palauttaa listan jossa on korissa olevat ostos-oliot
-        # kukin ostos-olio siis kertoo mistä tuotteesta on kyse JA kuinka monta kappaletta kyseistä tuotetta korissa on
+        return list(self.ostokset_kori.values())

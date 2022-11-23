@@ -8,16 +8,20 @@ class Ostoskori:
 
     def tavaroita_korissa(self):
         # kertoo korissa olevien tavaroiden lukumäärän
-        #if len(self.ostokset_kori) == 0: return 0
         määrä = 0
-        print(self.ostokset_kori)
+
         for nimi in self.ostokset_kori:
             määrä += self.ostokset_kori[nimi].lukumaara()
         
         return määrä
 
     def hinta(self):
-        return 0
+        hinta = 0
+
+        for nimi in self.ostokset_kori:
+            hinta += self.ostokset_kori[nimi].hinta()
+
+        return hinta
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):

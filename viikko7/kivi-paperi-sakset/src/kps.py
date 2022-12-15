@@ -1,9 +1,23 @@
 from tuomari import Tuomari
+from tekoaly import Tekoaly
+from tekoaly_parannettu import TekoalyParannettu
+from toinen_ihminen import ToinenIhminen
 
 class KPS:
     def __init__(self, toinen_pelaaja):
         self.toinen_pelaaja = toinen_pelaaja
 
+    @staticmethod
+    def luo_yksinpeli():
+        return KPS(Tekoaly())
+    
+    @staticmethod
+    def luo_vaikea_yksinpeli():
+        return KPS(TekoalyParannettu(10))
+    
+    @staticmethod
+    def luo_kaksinpeli():
+        return KPS(ToinenIhminen())
 
     def pelaa(self, ):
         tuomari = Tuomari()

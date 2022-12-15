@@ -1,7 +1,4 @@
 from kps import KPS
-from tekoaly import Tekoaly
-from tekoaly_parannettu import TekoalyParannettu
-from toinen_ihminen import ToinenIhminen
 
 def main():
     while True:
@@ -21,11 +18,11 @@ def main():
 
 def luo_peli(vastaus):
     if vastaus.endswith("a"):
-        return KPS(ToinenIhminen())
+        return KPS.luo_kaksinpeli()
     elif vastaus.endswith("b"):
-        return KPS(Tekoaly())
+        return KPS.luo_yksinpeli()
     elif vastaus.endswith("c"):
-        return KPS(TekoalyParannettu(10))
+        return KPS.luo_vaikea_yksinpeli()
     else:
         False
 

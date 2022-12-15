@@ -13,31 +13,21 @@ def main():
               )
 
         vastaus = input()
+        peli = luo_peli(vastaus)
 
-        if vastaus.endswith("a"):
-            print(
-                "Peli loppuu kun pelaaja antaa virheellisen siirron eli jonkun muun kuin k, p tai s"
-            )
+        if not peli: break
 
-            kaksinpeli = KPS(ToinenIhminen())
-            kaksinpeli.pelaa()
-        elif vastaus.endswith("b"):
-            print(
-                "Peli loppuu kun pelaaja antaa virheellisen siirron eli jonkun muun kuin k, p tai s"
-            )
+        peli.pelaa()
 
-            yksinpeli = KPS(Tekoaly())
-            yksinpeli.pelaa()
-        elif vastaus.endswith("c"):
-            print(
-                "Peli loppuu kun pelaaja antaa virheellisen siirron eli jonkun muun kuin k, p tai s"
-            )
-
-            haastava_yksinpeli = KPS(TekoalyParannettu(10))
-            haastava_yksinpeli.pelaa()
-        else:
-            break
-
+def luo_peli(vastaus):
+    if vastaus.endswith("a"):
+        return KPS(ToinenIhminen())
+    elif vastaus.endswith("b"):
+        return KPS(Tekoaly())
+    elif vastaus.endswith("c"):
+        return KPS(TekoalyParannettu(10))
+    else:
+        False
 
 if __name__ == "__main__":
     main()

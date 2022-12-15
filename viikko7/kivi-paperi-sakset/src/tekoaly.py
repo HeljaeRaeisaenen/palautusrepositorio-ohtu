@@ -14,10 +14,3 @@ class Tekoaly(ToinenPelaaja):
             return "p"
         else:
             return "s"
-
-    def aseta_siirto(self, siirto):
-        # ei tehdä mitään
-        pass
-
-    def valittu_siirto_tieto(siirto):
-        print(f"Tietokone valitsi: {siirto}")

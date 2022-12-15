@@ -1,7 +1,7 @@
 from toinen_pelaaja import ToinenPelaaja
 
 # "Muistava tekoäly"
-class TekoalyParannettu:
+class TekoalyParannettu(ToinenPelaaja):
     def __init__(self, muistin_koko):
         self._muisti = [None] * muistin_koko
         self._vapaa_muisti_indeksi = 0
@@ -51,6 +51,3 @@ class TekoalyParannettu:
 
         # Tehokkaampiakin tapoja löytyy, mutta niistä lisää
         # Johdatus Tekoälyyn kurssilla!
-
-    def valittu_siirto_tieto(siirto):
-        print(f"Tietokone valitsi: {siirto}")
